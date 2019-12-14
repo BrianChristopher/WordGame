@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Orlando Word Game</title>
+
+    <!-- This is bootstrap. -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand" href="#">
+        <img
+          src="./assets/images/orange.png"
+          width="30"
+          height="30"
+          alt="A small orange."
+        />
+        <span class="navbar-brand mb-0 h1"
+          >Orlando / Orange County Word Game</span
+        >
+      </span>
+      <span class="navbar-text">
+        Player: Brian | Wins: 32 | Losses: 0 | Bad Guesses Remaining: 14
+      </span>
+    </nav>
+    <div class="container" >
+    <div class="row">
+        <div class="col-5">This is text.</div>
+        <div class="col-7">
+            <form>
+                <div class="form-group">
+                  <label for="playerName">Player's Name</label>
+                  <input type="text" class="form-control" id="playerName" aria-describedby="nameHelp">
+                  <small id="nameHelp" class="form-text text-muted">Enter your name to start the game.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Start Game</button>
+              </form>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
