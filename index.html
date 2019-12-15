@@ -28,23 +28,37 @@
         >
       </span>
       <span class="navbar-text">
-        Player: Brian | Wins: 32 | Losses: 0 | Bad Guesses Remaining: 14
+        Player: <span id="playerName"></span> | Wins: 32 | Losses: 0 | Bad
+        Guesses Remaining: 14
       </span>
     </nav>
-    <div class="container" >
-    <div class="row">
+    <div class="container">
+      <div class="row">
         <div class="col-5">This is text.</div>
         <div class="col-7">
-            <form>
-                <div class="form-group">
-                  <label for="playerName">Player's Name</label>
-                  <input type="text" class="form-control" id="playerName" aria-describedby="nameHelp">
-                  <small id="nameHelp" class="form-text text-muted">Enter your name to start the game.</small>
-                </div>
-                <button type="submit" class="btn btn-primary">Start Game</button>
-              </form>
+          <form>
+            <div class="form-group">
+              <label for="playerName">Player's Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="playerName"
+                aria-describedby="nameHelp"
+              />
+              <small id="nameHelp" class="form-text text-muted"
+                >Enter your name to start the game.</small
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Start Game</button>
+          </form>
         </div>
+      </div>
     </div>
-    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/WordGame.js"></script>
   </body>
 </html>
