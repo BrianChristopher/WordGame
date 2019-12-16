@@ -1,0 +1,33 @@
+let roads = [
+  "Alafaya Trail",
+  "Anderson Street",
+  "Bumby Avenue",
+  "Chickasaw Trail",
+  "Church Street",
+  "Colonial Drive",
+  "Conroy Road",
+  "Corrine Drive",
+  "Curry Ford Road",
+  "Econlockhatchee Trail",
+  "Goldenrod Road",
+  "Hiawassee Road",
+  "International Drive",
+  "John Young Parkway",
+  "Kirkman Road",
+  "Lake Underhill Road",
+  "Michigan Street",
+  "Mills Avenue",
+  "Narcoossee Road",
+  "Orange Avenue",
+  "Orange Blossom Train",
+  "Pine Hills Road",
+  "Princeton Street",
+  "Robinson Street",
+  "Sand Lake Road",
+  "Semoran Boulevard",
+  "Silver Star Road",
+  "Universal Boulevard",
+  "University Boulevard"
+];
+
+export { roads };
