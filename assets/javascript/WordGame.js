@@ -4,6 +4,7 @@ let totalWins = 0;
 let totalLosses = 0;
 let badGuessesRemaining = 14;
 let gameWord = "";
+let gameWordCharArray = "";
 let lettersGuessedArray = [
   " ",
   "!",
@@ -43,7 +44,14 @@ let lettersGuessedArray = [
   "7",
   "8",
   "9",
-  "0"
+  "0",
+  "t",
+  "S",
+  "a",
+  "e",
+  "i",
+  "o",
+  "u"
 ];
 const roadList = [
   "Alafaya Trail",
@@ -86,6 +94,7 @@ initialze();
 function initialze() {
   resetScoreBoard(); //1. Reset scoreboard.
   getRandomWord(); //2. Choose random word/phrase.
+  parseWord(gameWord); //3. Break word up into individual characters.
   displayWord(); //3. Display random word/phrase on screen with blanks.
   beginGamePlay(); //4. Begin GAME PLAY
 }
@@ -103,12 +112,30 @@ function getRandomWord() {
   gameWord = randomWord;
 }
 
+function parseWord(phrase) {
+  console.log("The parseWord function was called with ", phrase);
+  gameWordCharArray = phrase.split("")
+  console.log(gameWordCharArray)
+}
+
 function displayWord() {
   console.log("displayWord function was called.");
-  let splitWord=gameWord.split("");
-  console.log(splitWord);
-  $("#buildWordHere").text(splitWord);
-  
+  let display = ""
+  for (char in gameWordCharArray){
+    let thisCharacter = (gameWordCharArray[char]);
+    if (thisCharacter == " "){
+      display += "\n";
+    }
+    else if (lettersGuessedArray.includes(thisCharacter)) {
+      display += (gameWordCharArray[char]);
+    }
+    else {
+      display += "__ ";
+    }
+  }
+
+  console.log("Display: ", display);
+  $("#buildWordHere").text(display);
 }
 
 function beginGamePlay() {
